@@ -74,6 +74,7 @@ for(var k = 0; k < words.length; k++){
     common = common1;
     var best = j;
     console.log(all[best]);
+    console.log(best);
   }
 }
 
@@ -100,4 +101,8 @@ for(var k = 0; k < words.length; k++){
   p.innerText = decstring;
   p.id = "dectext"
   document.body.insertBefore(p, ea);
+
+  var sp = document.createElement('p');
+  sp.innerText = "The shift was " + best + "!";
+  document.body.insertBefore(sp, ea);
 }
